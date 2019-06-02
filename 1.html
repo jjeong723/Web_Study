@@ -1,0 +1,97 @@
+생활코딩 Web1으로 강의 듣는중
+
+Tag
+<strong>By <u>JJeong</u></strong>
+<u>Studying a Web Development</u>
+
+<strong>...</strong> : Bold
+<u>...</u> : 밑줄
+<h1>H1 Heading</h1>
+<h2>H2 Heading</h2>
+<h3>H3 Heading</h3>
+<h4>H4 Heading</h4>
+<h5>H5 Heading</h5>
+<h6>H6 Heading</h6>
+
+<br> : 한줄 띄어쓰기
+<p>...</p> : 한 단락 구별 -> <br>로 구별하는 것보다 더 체계적이기 때문에 추천함
+CSS : HTML과는 다른 언어지만, HTML의 세세한 설정을 위한 언어이기도 함
+
+HTML의 중요성: 
+1. 실제로 표현되는것은 같을지 몰라도 HTML의 정보가 더 중요하게 나타나게된다.
+Example: <h3>Coding</h3> 과 <span style="font-size: 24px">Coding</span>은 같아 보이지만, 검색엔진에서는 HTML의 소스를 먼저 노출시킨다.
+
+2. 웹은 가장 접근성이 높은 언어이고, 많은 베려를 위한 언어이다. 모든것은 HTML을 기반으로 언어를 사용함으로서 추후 다른 언어로 변환 및 이미지 변환이 될시에 변하고 접근성이 높다.
+
+
+이미지 넣는 방법 (Attribute란 무엇인가)
+<img src="coding.jpg" width="100%">
+https://unsplash.com/ 이는 저작권에 구애받지 않는 무료 이미지 사이트 이다.
+<>안에 Tag외에 정보를 추가할 경우 Attribute로 추가적인 정보를 입력한다.
+(src, width 등) 이러한 Attribute는 순서는 상관없이 기입할 수 있다.
+
+
+부모자식 태그
+<parent>
+    <child></child>
+</parent>
+
+
+목차 만드는법
+1. html <br>
+2. css <br>
+3. JavaScript <br>
+-> 그럴듯... But 목차용 Tag가 있음! (Tag: li)
+
+<ul>
+    <li>1. html</li>
+    <li>2. CSS</li>
+    <li>3. JavaScript</li>
+</ul>
+<ul>
+    <li>난</li>
+    <li>천재</li>
+    <li>Da</li>
+</ul>
+-> 리스트화 됬음.
+리스트가 여러개가 될수 있음.-> 이를 위한 그룹 Tag ul 이 있음. (그래서 ul은 li의 부모 태그라고 볼수 있음)
+-> Numbering을 위해서는 ul -> ol을 하면 됨
+
+list -> li
+Ordered list -> ol
+Unordered list -> ul 
+
+<title> ... </title> 웹페이지의 제목을 위한 태그, 웹검색시 타이틀도 검색을 위한 중요한 수단임.
+
+HTML에서는 영어를 기본으로 인식하며, 한글은 인식되지 않는다. → utf8로 열라고 인식시켜야함. <meta charset=a"utf-8">을 기입
+
+한글 → 01011... → 번역 ㅠ
+
+한글 → 01011... → 한글 : utf-8
+
+<head>...</head>: body 태그를 설명하기 위한 태그(title, meta 등의 태그가 들어가게됨.)
+
+<body>...</body>: 웹페이지의 본문 태그
+
+<html>...</html>:  head, body 모두를 아우르는 태그
+
+@@기본적으로 다음과 같음. @@
+
+<!doctype html>
+
+<html>
+
+<head> ... </head>
+
+<body> ... </body>
+
+</html>
+
+@@@@@@@@@@@@@@@@
+
+
+anchor -> a
+<a href="http://..."> ... </a>: 링크 태크
+    target="_blank": 새로운 탭으로 열기
+    title="Name" : 링크의 이름을 주기
+<a href="http://www.naver.com"> 네이버 </a>
