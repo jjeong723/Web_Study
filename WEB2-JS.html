@@ -1,0 +1,28 @@
+JavaScript는 웹이 사용자와 상호작용하기 위한 언어이다.
+HTML은 이미지처럼 정적인 웹을 만든다면, JavaScript는 HTML위에서 영화와 같이 동적인 웹을 만드는 언어이다.
+
+night라는 버튼을 만들기
+<input type="button" value="--버튼 이름--" onclick="--JavaScript 코드 넣는 공간--">
+
+JavaScript는 동적이다. 다음과같은 함수도 HTML에서는 정적으로 1+1로 출력되지만, JavaScript는 2로 출력된다.(ex1.html 참조)
+<script>
+    document.write(1+1)
+</script>
+
+input 태그에서 여러가지 type과 이벤트에 따른 JavaScript 코드들이 존재한다. (ex2 참조)
+<input type="button" value="hi" onclick="alert('hi')">
+<input type="text" onchange="alert('changed')">
+<input type="text" onkeydown="alert('key down!')">
+
+Concol(F12)을 통해서도 JavaScript를 움직일 수 있다
+    - 이는 현재 화면의 페이지만을 움직이게된다.
+    - 웹크롤링이나 페이스북의 덧글중 몇명만 선정한다 등의 다양한 활용범위를 가진다.
+
+1. 문자열.length : 문자열의 갯수
+    'Hello world'.length = 11
+2. 문자열.toUpperCase() : 문자열이 모두 대문자
+    'Hello world'.toUpperCase() = 'HELLO WORLD'
+3. 문자열.indexOf(찾고자하는 문자) : 문자열에서 찾고자 하는 문자를 찾아주는 함수
+    'Hello world'.indexOf('o') = 4
+4. 문자열.trim() : 문자열의 공백을 없애주는 기능
+    '      kkk     '.trim() = 'kkk'
